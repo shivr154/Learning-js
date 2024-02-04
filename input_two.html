@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms One</title>
+    <style>
+        body{
+            background-color: rgb(15, 6, 27);
+            color: beige;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+<!-- we have two methods to send form -> 1 is GET(not in encrypted form / clear text format) and other is POST(send form in encrypted manner) -->
+    <form action="url" method="GET" accept-charset="UTF-8" autocomplete="off" enctype="" > 
+        <!-- using label before form is good practice sometime placeholder cant read by browser -->
+        <label for="fname">First Name</label> <br>
+        <input type="text" placeholder="First Name" name="" value="Shivam" id="fname"><br>
+        <label for="password">Password</label><br>
+        <input type="password" name="" id="password">
+        <input type="week" name="" id="">
+        <input type="reset" value="reset">
+
+        <select name="editors" id="" multiple>
+            <option value="vscode">vscode</option>
+            <option value="sublime">sublime</option>
+        </select>
+<!-- input hidden is used in django and used to send tokens which user cant see  -->
+        <input type="hidden" name="">
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
